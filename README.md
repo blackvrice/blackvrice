@@ -33,10 +33,10 @@ C# 장비 제어 실무의 **상태 · 비동기 · 복구** 경험을 C++ · Un
 ### [RTS](https://github.com/blackvrice/rts)
 `C++23` `SFML3` `CMake`
 
-고정 30Hz 틱 · A* 경로 탐색
-Replay · WorldHash 검증
+자원 채집 → 건설 → 유닛 생산
+고정 30Hz 틱 · A* · Replay
 
-**CTest Headless Smoke 1/1**
+**A\* 점유 조회 O(n) → O(1)**
 
 </td>
 <td width="33%" align="center">
@@ -46,10 +46,10 @@ Replay · WorldHash 검증
 ### [Tycoon](https://github.com/blackvrice/Tycoon)
 `Unity 6` `C#` `UI Toolkit`
 
-Farm → Sell → Reinvest
-→ Save / Load 경영 루프
+경작 → 수확 → 판매 → 재투자
+3–5분 경영 루프 완성
 
-**PlayMode 74 · EditMode 4**
+**테스트 78개 · 더블 미사용**
 
 </td>
 <td width="33%" align="center">
@@ -59,16 +59,27 @@ Farm → Sell → Reinvest
 ### [ArenaShooter](https://github.com/blackvrice/ArenaShooter)
 `Unreal Engine 5.6` `C++`
 
-Title → 5라운드 → 3 Phase Boss
-→ Clear / Restart
+4라운드 → 5 Phase Boss
+3인칭 웨이브 슈터
 
-**All-Rounds Smoke · Shipping**
+**Hitscan 404 hit / 0 miss**
 
 </td>
 </tr>
 </table>
 
 > 썸네일을 누르면 플레이 영상이 열립니다. 수치는 직접 실행하고 기록한 결과이며, 확인하지 않은 범위는 완성된 기능으로 표기하지 않았습니다.
+
+<br>
+
+## 🔍 문제 해결 기록
+
+| 프로젝트 | 문제 | 해결 |
+|---|---|---|
+| **RTS** | 대형 맵에서 A* 요청이 한 틱에 몰려 시뮬레이션 정체 | 유닛 점유 조회를 O(n) 선형 탐색 → O(1) 캐시 조회로 전환, 경로 요청을 여러 틱·워커 스레드에 분산 |
+| **RTS** | 안개 시야 밖 전투 연출로 적 위치 노출 | 피해·사망·폭발 피드백을 가시 지역에서만 재생 |
+| **Tycoon** | 작물 추가 시마다 농장 규칙 코드 수정 필요 | GameDatabase + ScriptableObject로 데이터 분리, 규칙 수정 없이 콘텐츠만 추가 |
+| **ArenaShooter** | 라운드별 탄약 충분 여부를 감으로 판단 | 명중률 70% 가정 필요 578발 vs 확보 600발로 수치 검증 |
 
 <br>
 
