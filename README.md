@@ -18,6 +18,7 @@ C# 장비 제어 실무의 **상태 · 비동기 · 복구** 경험을 C++ · Un
 |---|---|
 | 💼 | 소프트웨어 개발 실무 **4년** (웹 백엔드 → 장비 제어) |
 | 🎮 | 플레이 가능한 상태까지 완성한 게임 프로젝트 **3개** |
+| 🧪 | 자동화 테스트로 검증 — PlotterCanvas 223개 · Tycoon 78개 · RTS Smoke |
 | 🔍 | 현재 **게임 클라이언트 포지션 구직 중** |
 
 <br>
@@ -83,6 +84,16 @@ C# 장비 제어 실무의 **상태 · 비동기 · 복구** 경험을 C++ · Un
 
 <br>
 
+## 🧰 Other Projects
+
+| 프로젝트 | 스택 | 내용 |
+|---|---|---|
+| [**PlotterCanvas**](https://github.com/blackvrice/PlotterCanvas) | `C# 12` `.NET 8` `WPF/MVVM` `C++17` | 드로잉 → 기계 명령 변환 → 가상 플로터 실행. View→VM→Service→Device→Transport 단방향 계층, Virtual/TCP/Serial 교체 가능 구현. **xUnit 223개 통과**, 경로 포인트 92% 감소 |
+| [**StarCraft Map Editor**](https://github.com/blackvrice/starcraft_map_editor) | `Flutter` `Dart` `StormLib` `euddraft` | StarCraft: Remastered용 오픈소스 UMS 맵 에디터. CHK 포맷을 원본 바이트 보존하며 파싱, MPQ·EUD 서브프로세스 어댑터. **개발 중 (M6.2)** |
+| [**backjoon**](https://github.com/blackvrice/backjoon) | `Next.js` `PostgreSQL` `Prisma` `Docker` | 문제·제출·사용자·로그 관리 어드민. 샘플 배열 → Prisma API 마이그레이션 시 채점 워커 참조 필드 보존 |
+
+<br>
+
 ## 🛠 Tech Stack
 
 **게임 클라이언트**
@@ -104,6 +115,8 @@ C# 장비 제어 실무의 **상태 · 비동기 · 복구** 경험을 C++ · Un
 ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat-square&logo=oracle&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
 
 <br>
 
