@@ -4,6 +4,10 @@
 
 ### 게임 규칙을 구조화하고, 끝까지 검증하는 개발자
 
+**상태 · 비동기 · 복구**를 다뤄 온 4년 차 개발자가 **C++ · Unity · Unreal**로 만든 게임 루프
+
+[![Open to Work](https://img.shields.io/badge/Open%20to%20Work-Game%20Client%20Programmer-2ea44f?style=for-the-badge&logo=github&logoColor=white)](mailto:blackvrice@naver.com)
+
 [![Portfolio](https://img.shields.io/badge/Portfolio-profile.blackvrice.com-0f766e?style=for-the-badge&logo=googlechrome&logoColor=white)](https://profile.blackvrice.com)
 [![Blog](https://img.shields.io/badge/Blog-Tistory-e76f51?style=for-the-badge&logo=tistory&logoColor=white)](https://blackvrice.tistory.com)
 [![Velog](https://img.shields.io/badge/Velog-20C997?style=for-the-badge&logo=velog&logoColor=white)](https://velog.io/@blackvrice/posts)
@@ -11,15 +15,45 @@
 
 </div>
 
-C# 장비 제어 실무의 **상태 · 비동기 · 복구** 경험을 C++ · Unity · Unreal 프로젝트의 게임 루프 설계로 확장했습니다.
-웹 백엔드 실무에서 쌓은 데이터 처리와 성능 개선 경험도 함께 가지고 있습니다.
+<br>
+
+## 👋 About Me
+
+C# 장비 제어 실무에서 다룬 **상태 · 비동기 · 복구** 경험을 C++ · Unity · Unreal 프로젝트의 **게임 루프 설계**로 확장했습니다.
+웹 백엔드 실무에서 쌓은 **데이터 처리와 성능 개선** 경험도 함께 가지고 있습니다.
+
+"돌아간다"에서 멈추지 않고, **수치와 테스트로 증명할 수 있을 때** 완성이라고 말합니다.
 
 | | |
 |---|---|
 | 💼 | 소프트웨어 개발 실무 **4년** (웹 백엔드 → 장비 제어) |
-| 🎮 | 플레이 가능한 상태까지 완성한 게임 프로젝트 **3개** |
-| 🧪 | 자동화 테스트로 검증 — PlotterCanvas 223개 · Tycoon 78개 · RTS Smoke |
-| 🔍 | 현재 **게임 클라이언트 포지션 구직 중** |
+| 🎮 | 플레이 가능한 상태까지 완성한 게임 프로젝트 **3개** (C++ / Unity / Unreal) |
+| 🧪 | 자동화 테스트로 검증 — PlotterCanvas **223개** · Tycoon **78개** · RTS Smoke |
+| ⚡ | 성능 개선 — RTS A\* 점유 조회 **O(n) → O(1)**, PlotterCanvas 경로 포인트 **92% 감소** |
+| 🔍 | 현재 **게임 클라이언트 포지션 구직 중** — 제안 환영합니다 |
+
+<br>
+
+## ⏱ 30초 요약 — 이렇게 보시면 빠릅니다
+
+1. **▶ 플레이 영상** — 아래 프로젝트 썸네일을 누르면 바로 재생됩니다.
+2. **🔍 문제 해결 기록** — 무엇이 막혔고, 어떻게 풀었고, 무엇으로 확인했는지 정리했습니다.
+3. **🌐 [profile.blackvrice.com](https://profile.blackvrice.com)** — 프로젝트별 구현·검증 근거와 상세 경력을 모아 둔 웹 포트폴리오입니다.
+
+<br>
+
+## 🎯 게임 클라이언트 요구 역량 ↔ 근거
+
+| 요구 역량 | 보유 역량 | 근거 |
+|---|---|---|
+| C++ / C# 개발 | C++23, C# 12 | RTS · ArenaShooter · Tycoon · PlotterCanvas · 앤서레이 |
+| 자료구조 · 알고리즘 | A\*, Command Queue, State Machine | RTS 경로 탐색 · 명령 큐 · 상태 전이 |
+| 유지보수 가능한 코드 | 로직 / 렌더링 분리, 계층별 책임 분리 | 3개 게임 프로젝트 · 5계층 장비 제어 구조 |
+| Unity / Unreal | Unity 6, Unreal Engine 5.6 | Tycoon · ArenaShooter |
+| 네트워크 · 소켓 | TCP/IP, Serial, RS-485, USB | 앤서레이 장비 통신 제어 |
+| 자동화 테스트 · 검증 | xUnit, Unity Test Framework, CTest | PlotterCanvas 223개 · Tycoon 78개 · RTS Headless Smoke |
+| 성능 개선 · 원인 추적 | 프로파일링 기반 병목 제거 | RTS 점유 조회 O(n) → O(1) · 경로 포인트 92% 감소 |
+| 기획 · 완성 경험 | 핵심 플레이 루프 완성 | README · 플레이 영상 · 자동 검증 |
 
 <br>
 
@@ -27,9 +61,9 @@ C# 장비 제어 실무의 **상태 · 비동기 · 복구** 경험을 C++ · Un
 
 <table>
 <tr>
-<td width="33%" align="center">
+<td width="33%" align="center" valign="top">
 
-[<img src="https://img.youtube.com/vi/g9drIxSF76o/mqdefault.jpg" width="100%">](https://youtu.be/g9drIxSF76o)
+[<img src="https://img.youtube.com/vi/g9drIxSF76o/mqdefault.jpg" width="100%" alt="RTS 플레이 영상">](https://youtu.be/g9drIxSF76o)
 
 ### [RTS](https://github.com/blackvrice/rts)
 `C++23` `SFML3` `CMake`
@@ -39,10 +73,12 @@ C# 장비 제어 실무의 **상태 · 비동기 · 복구** 경험을 C++ · Un
 
 **A\* 점유 조회 O(n) → O(1)**
 
-</td>
-<td width="33%" align="center">
+[▶ 영상](https://youtu.be/g9drIxSF76o) · [💻 코드](https://github.com/blackvrice/rts)
 
-[<img src="https://img.youtube.com/vi/VSVncw0xsNU/mqdefault.jpg" width="100%">](https://youtu.be/VSVncw0xsNU)
+</td>
+<td width="33%" align="center" valign="top">
+
+[<img src="https://img.youtube.com/vi/VSVncw0xsNU/mqdefault.jpg" width="100%" alt="Tycoon 플레이 영상">](https://youtu.be/VSVncw0xsNU)
 
 ### [Tycoon](https://github.com/blackvrice/Tycoon)
 `Unity 6` `C#` `UI Toolkit`
@@ -52,10 +88,12 @@ C# 장비 제어 실무의 **상태 · 비동기 · 복구** 경험을 C++ · Un
 
 **테스트 78개 · 더블 미사용**
 
-</td>
-<td width="33%" align="center">
+[▶ 영상](https://youtu.be/VSVncw0xsNU) · [💻 코드](https://github.com/blackvrice/Tycoon)
 
-[<img src="https://img.youtube.com/vi/qMS_WJlHeEc/mqdefault.jpg" width="100%">](https://youtu.be/qMS_WJlHeEc)
+</td>
+<td width="33%" align="center" valign="top">
+
+[<img src="https://img.youtube.com/vi/qMS_WJlHeEc/mqdefault.jpg" width="100%" alt="ArenaShooter 플레이 영상">](https://youtu.be/qMS_WJlHeEc)
 
 ### [ArenaShooter](https://github.com/blackvrice/ArenaShooter)
 `Unreal Engine 5.6` `C++`
@@ -65,11 +103,13 @@ C# 장비 제어 실무의 **상태 · 비동기 · 복구** 경험을 C++ · Un
 
 **Hitscan 404 hit / 0 miss**
 
+[▶ 영상](https://youtu.be/qMS_WJlHeEc) · [💻 코드](https://github.com/blackvrice/ArenaShooter)
+
 </td>
 </tr>
 </table>
 
-> 썸네일을 누르면 플레이 영상이 열립니다. 수치는 직접 실행하고 기록한 결과이며, 확인하지 않은 범위는 완성된 기능으로 표기하지 않았습니다.
+> 수치는 직접 실행하고 기록한 결과이며, 확인하지 않은 범위는 완성된 기능으로 표기하지 않았습니다.
 
 <br>
 
@@ -141,10 +181,35 @@ EVIDENCE   무엇으로 증명하는가 — Git 기록, 로그, 문서
 
 <br>
 
+<details>
+<summary><b>🌏 English Summary</b></summary>
+
+<br>
+
+**Seongsik Oh — Game Client Programmer**
+*A developer who structures game rules and verifies them to the end.*
+
+- **4 years** of professional software development (web backend → equipment control software)
+- **3 playable game projects** across C++23/SFML3 (RTS), Unity 6 (Tycoon) and Unreal Engine 5.6 (ArenaShooter)
+- Verified with automated tests — PlotterCanvas 223 tests · Tycoon 78 tests · RTS smoke tests
+- Performance work — RTS A\* occupancy lookup **O(n) → O(1)**, path requests spread across ticks and worker threads
+- Brings state / async / recovery experience from C#/WPF equipment control into game-loop design
+
+📫 **Currently looking for a Game Client Programmer position** — [blackvrice@naver.com](mailto:blackvrice@naver.com)
+
+</details>
+
+<br>
+
 <div align="center">
 
 [![GitHub stats](https://github-readme-stats.vercel.app/api?username=blackvrice&show_icons=true&hide_border=true&title_color=0f766e&icon_color=e76f51&bg_color=00000000)](https://github.com/blackvrice)
 
-**더 자세한 내용은 → [profile.blackvrice.com](https://profile.blackvrice.com)**
+### 📫 함께 게임을 만들 팀을 찾고 있습니다
+
+게임 클라이언트 포지션 제안 · 프로젝트 관련 질문 모두 환영합니다.
+
+[![Email](https://img.shields.io/badge/blackvrice@naver.com-18211f?style=for-the-badge&logo=maildotru&logoColor=white)](mailto:blackvrice@naver.com)
+[![Portfolio](https://img.shields.io/badge/profile.blackvrice.com-0f766e?style=for-the-badge&logo=googlechrome&logoColor=white)](https://profile.blackvrice.com)
 
 </div>
